@@ -1,5 +1,6 @@
-
-console.log(fetch('http://localhost:4000/clientes'));
+fetch('http://localhost:4000/clientes')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 
 const corpoTabela = document.querySelector('[data-conteudo-tabela]');
 
