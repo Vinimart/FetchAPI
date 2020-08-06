@@ -19,5 +19,5 @@ const cadastrarClientes = async (nome, cpf) => {
         body: json,
     });
 
-    return response.body
+    return response.body;
 };
